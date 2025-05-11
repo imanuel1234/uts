@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Style Bio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #0f1419;
+    }
+
+    .twitter-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #e1e8ed;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .user-info .name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .user-info .username {
+      color: #657786;
+      font-size: 14px;
+    }
+
+    .bio {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .bio a {
+      color: #1DA1F2;
+      text-decoration: none;
+    }
+
+    .location,
+    .email {
+      font-size: 14px;
+      color: #536471;
+      margin-bottom: 5px;
+    }
+
+    .follow-stats {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      margin: 15px 0;
+    }
+
+    .follow-stats span {
+      font-weight: bold;
+      color: #0f1419;
+    }
+
+    .follow-btn {
+      background-color: #1DA1F2;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .tweets {
+      border-top: 1px solid #e1e8ed;
+      padding-top: 10px;
+    }
+
+    .tweet {
+      border-bottom: 1px solid #e1e8ed;
+      padding: 15px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .tweet-box {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #e1e8ed;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .tweet-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .tweet-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .tweet-user {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .tweet-handle {
+      color: #657786;
+      font-size: 13px;
+    }
+
+    .tweet-content {
+      font-size: 15px;
+      margin: 5px 0;
+      line-height: 1.4;
+    }
+
+    .tweet-time {
+      font-size: 12px;
+      color: #657786;
+    }
+
+    .tweet-reply {
+      margin-left: 50px;
+      border-left: 2px solid #e1e8ed;
+      padding-left: 15px;
+      margin-top: 15px;
+    }
+
+    .btn-back {
+      background-color: #1DA1F2;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .btn-back:hover {
+      background-color: #0d85c2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="twitter-container">
+    <div class="header">
+      <img src="WhatsApp Image 2025-03-22 at 03.42.57.jpeg" alt="Foto Profil" class="profile-pic">
+      <div class="user-info">
+        <div class="name">Imanuel Fernando</div>
+        <div class="username">@im_nando_2</div>
+      </div>
+    </div>
+
+    <div class="bio">
+      💻 Web Developer | UI/UX Enthusiast<br>
+      📍 Gresik, Indonesia<br>
+      📩 <a href="mailto:fernandoimanuel26.com">fernandoimanuel26.com</a>
+    </div>
+
+    <div class="follow-stats">
+      <div><span>5K</span> Pengikut</div>
+      <div><span>250</span> Mengikuti</div>
+    </div>
+
+    <button class="follow-btn" onclick="window.open('https://twitter.com/im_nando_2')">Follow</button>
+
+    <div class="tweets">
+      <!-- Tweet 1 -->
+      <div class="tweet-box">
+        <div class="tweet-header">
+          <img src="WhatsApp Image 2025-03-22 at 03.42.57.jpeg" class="tweet-avatar" alt="Avatar">
+          <div>
+            <div class="tweet-user">Imanuel Fernando <span class="tweet-handle">@im_nando_2</span></div>
+            <div class="tweet-time">14 April 2025 • 10:30 WIB</div>
+          </div>
+        </div>
+        <div class="tweet-content">
+          Lagi bikin portofolio pribadi versi Twitter-style. Desainnya simple tapi fungsional 💻✨
+        </div>
+
+        <!-- Balasan 1 -->
+        <div class="tweet-reply">
+          <div class="tweet-header">
+            <img src="WhatsApp Image 2025-03-22 at 03.42.57.jpeg" class="tweet-avatar" alt="User1">
+            <div>
+              <div class="tweet-user">Fikri Dev <span class="tweet-handle">@fikri_dev</span></div>
+              <div class="tweet-time">10:45 WIB</div>
+            </div>
+          </div>
+          <div class="tweet-content">
+            Keren, bro! Share dong hasil akhirnya 👀
+          </div>
+
+          <!-- Balasan ke balasan 1 -->
+          <div class="tweet-reply">
+            <div class="tweet-header">
+              <img src="profile.jpg" class="tweet-avatar" alt="Avatar">
+              <div>
+                <div class="tweet-user">Imanuel Fernando <span class="tweet-handle">@im_nando_2</span></div>
+                <div class="tweet-time">11:00 WIB</div>
+              </div>
+            </div>
+            <div class="tweet-content">
+              Siap! Ntar aku update link GitHub-nya di bio 🙌
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tweet 2 -->
+      <div class="tweet-box">
+        <div class="tweet-header">
+          <img src="WhatsApp Image 2025-03-22 at 03.42.57.jpeg" class="tweet-avatar" alt="Avatar">
+          <div>
+            <div class="tweet-user">Imanuel Fernando <span class="tweet-handle">@im_nando_2</span></div>
+            <div class="tweet-time">14 April 2025 • 12:00 WIB</div>
+          </div>
+        </div>
+        <div class="tweet-content">
+          Ternyata debugging itu bikin pusing banget 😩. Ada yang punya tips supaya lebih efisien?
+        </div>
+
+        <!-- Balasan 2 -->
+        <div class="tweet-reply">
+          <div class="tweet-header">
+            <img src="WhatsApp Image 2025-03-22 at 03.42.57.jpeg" class="tweet-avatar" alt="User2">
+            <div>
+              <div class="tweet-user">Anna Dev <span class="tweet-handle">@anna_dev</span></div>
+              <div class="tweet-time">12:10 WIB</div>
+            </div>
+          </div>
+          <div class="tweet-content">
+            Coba debug dengan metode "divide and conquer". Pecah masalahnya jadi bagian kecil, lebih mudah dicari solusinya! 💡
+          </div>
+
+          <!-- Balasan ke balasan 2 -->
+          <div class="tweet-reply">
+            <div class="tweet-header">
+              <img src="WhatsApp Image 2025-03-22 at 03.42.57.jpeg" class="tweet-avatar" alt="Avatar">
+              <div>
+                <div class="tweet-user">Imanuel Fernando <span class="tweet-handle">@im_nando_2</span></div>
+                <div class="tweet-time">12:15 WIB</div>
+              </div>
+            </div>
+            <div class="tweet-content">
+              Wah, terima kasih Anna! Nanti coba aku pakai metode itu, semoga lebih mudah. 🙏
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tweet 3 -->
+      <div class="tweet-box">
+        <div class="tweet-header">
+          <img src="profile.jpg" class="tweet-avatar" alt="Avatar">
+          <div>
+            <div class="tweet-user">Imanuel Fernando <span class="tweet-handle">@im_nando_2</span></div>
+            <div class="tweet-time">14 April 2025 • 15:00 WIB</div>
+          </div>
+        </div>
+        <div class="tweet-content">
+          Lagi pengen coba belajar AI, siapa yang sudah pernah belajar? Ada rekomendasi materi atau tutorial? 🤖📚
+        </div>
+
+        <!-- Balasan 3 -->
+        <div class="tweet-reply">
+          <div class="tweet-header">
+            <img src="user3.jpg" class="tweet-avatar" alt="User3">
+            <div>
+              <div class="tweet-user">Rina AI <span class="tweet-handle">@rina_ai</span></div>
+              <div class="tweet-time">15:05 WIB</div>
+            </div>
+          </div>
+          <div class="tweet-content">
+            Banyak banget! Bisa mulai dari Python basics dan TensorFlow tutorials. Banyak yang gratis di YouTube lho! 📹
+          </div>
+
+          <!-- Balasan ke balasan 3 -->
+          <div class="tweet-reply">
+            <div class="tweet-header">
+              <img src="profile.jpg" class="tweet-avatar" alt="Avatar">
+              <div>
+                <div class="tweet-user">Imanuel Fernando <span class="tweet-handle">@im_nando_2</span></div>
+                <div class="tweet-time">15:15 WIB</div>
+              </div>
+            </div>
+            <div class="tweet-content">
+              Wah, terima kasih banyak Rina! Pasti coba lihat video tutorialnya 😊
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html" class="index.html">Kembali</a>
+  </div>
+
+</body>
+</html> buat kodingan dalam satu halaman tidak memakai tab baru setiap kodingan

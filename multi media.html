@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Bio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #262626;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #c13584;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .bio a {
+      color: #00376b;
+      text-decoration: none;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .stats div {
+      font-size: 16px;
+    }
+
+    .stats span {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .btn-container {
+      margin: 20px 0;
+    }
+
+    .btn {
+      background-color: #0095f6;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #007acc;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #0095f6;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .gallery {
+      max-width: 1000px;
+      margin: 0 auto 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 10px;
+      padding: 0 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    @media screen and (max-width: 600px) {
+      .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .btn {
+        width: 100%;
+        margin: 8px 0;
+      }
+
+      .profile-container {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <img src="WhatsApp Image 2025-04-14 at 09.41.26.jpeg" alt="Foto Profil" class="profile-img">
+    <div class="name">Imanuel Fernando</div>
+    <div class="bio">
+      📍 Gresik, Indonesia<br>
+      💻 Web Developer | UI/UX Enthusiast<br>
+      📩 <a href="mailto:fernandoimanuel26.com">fernandoimanuel26.com</a>
+    </div>
+    
+    <div class="stats">
+      <div>
+        <span>120</span>
+        Postingan
+      </div>
+      <div>
+        <span>5K</span>
+        Pengikut
+      </div>
+      <div>
+        <span>250</span>
+        Mengikuti
+      </div>
+    </div>
+    
+    <div class="btn-container">
+      <button class="btn" onclick="window.open('https://www.instagram.com/im_nando_2?igsh=M2Z2Z213bzlpa3E1')">Follow</button>
+      <button class="btn" onclick="window.open('https://www.instagram.com/im_nando_2?igsh=M2Z2Z213bzlpa3E1')">Kontak</button>
+      <br>
+      <a href="index.html" class="back-link">⬅ Kembali ke Profil</a>
+    </div>
+  </div>
+  
+  <div class="gallery">
+    <img src="image1.jpg" alt="Post">
+    <img src="image2.jpg" alt="Post">
+    <img src="image3.jpg" alt="Post">
+    <img src="image4.jpg" alt="Post">
+    <img src="image5.jpg" alt="Post">
+    <img src="image6.jpg" alt="Post">
+    <img src="image7.jpg" alt="Post">
+    <img src="image8.jpg" alt="Post">
+    <img src="image9.jpg" alt="Post">
+    <img src="image10.jpg" alt="Post">
+    <img src="image11.jpg" alt="Post">
+    <img src="image12.jpg" alt="Post">
+    <img src="image13.jpg" alt="Post">
+    <img src="image14.jpg" alt="Post">
+    <img src="image15.jpg" alt="Post">
+    <img src="image16.jpg" alt="Post">
+    <img src="image17.jpg" alt="Post">
+    <img src="image18.jpg" alt="Post">
+    <img src="image19.jpg" alt="Post">
+    <img src="image20.jpg" alt="Post">
+    <a href="index.html" class="back-link">⬅ Kembali ke Profil</a>
+  </div>
+</body>
+</html>

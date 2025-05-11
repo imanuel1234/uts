@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Imanuel Fernando</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/nando.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tulisan Bergerak -->
+<div class="marquee-container">
+  <div class="marquee">
+    🌟 Selamat Datang di Portofolio Imanuel Fernando - Temukan informasi tentang saya, pendidikan, karya, dan banyak lagi. 🌟
+  </div>
+</div>
+ <div class="slider">
+    <div class="slides" id="sliderImages">
+      <img src="uisi-kampus-swasta-berkelas-internasional-U1S-thumb.jpg" alt="Gambar 1" />
+      <img src="20240723_150957-2527100743.webp" alt="Gambar 2" />
+      <img src="20230911082553.jpg" alt="Gambar 3" />
+      <img src="c6b144d6139f6e93ebbce51bdd99d1f7.jpg" alt="Gambar 4" />
+      <img src="WhatsApp Image 2025-03-22 at 03.42.57.jpeg" alt="Gambar 5" />
+      <img src="WhatsApp Image 2025-04-14 at 09.41.40.jpeg" alt="Gambar 6" />
+    </div>
+    <h1>Imanuel Fernando</h1>
+  </div>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sliderImages = document.getElementById("sliderImages");
+    const totalImages = sliderImages.children.length;
+    let currentIndex = 0;
+    let direction = 1; // 1 untuk maju (kiri), -1 untuk mundur (kanan)
+
+    setInterval(() => {
+      currentIndex += direction;
+      
+      // Jika mencapai gambar terakhir, ubah arah
+      if (currentIndex === totalImages - 1 || currentIndex === 0) {
+        direction *= -1;
+      }
+
+      // Geser gambar
+      sliderImages.style.transition = "transform 0.5s ease";
+      sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }, 1500); // 1,5 detik
+  });
+</script>
+   <style>
+        .hero {
+            background-image: url('WhatsApp Image 2025-04-14 at 09.41.02.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pendidikan">Riwayat Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#audio">Audio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bukutamu">Buku Tamu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Hero Section dengan Full Background -->
+<!-- Hero Section dengan Background Image Parallax -->
+<header class="hero-section text-white d-flex align-items-center justify-content-center">
+  <div class="overlay"></div> <!-- Overlay Transparan -->
+  <div class="text-center content">
+    <h1 class="display-4">Selamat Datang di Portofolio Imanuel Fernando</h1>
+    <p class="lead">Temukan informasi tentang saya, pendidikan, karya, dan banyak lagi.</p>
+    <a href="#tentang" class="btn btn-primary btn-lg mt-3">Jelajahi Sekarang</a>
+  </div>
+</header>
+
+<!-- Tentang Saya -->
+<section id="tentang" class="container my-5">
+  <h2 class="text-primary mb-4">Tentang Saya</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="WhatsApp Image 2025-04-14 at 09.41.02.jpeg" alt="Foto Imanuel" class="img-fluid rounded-circle">
+    </div>
+    <div class="col-md-8">
+      <p>Halo! Saya Imanuel Fernando, mahasiswa Sistem Informasi yang antusias dengan dunia teknologi dan pengembangan perangkat lunak. Saya memiliki semangat belajar yang tinggi serta minat dalam pengembangan aplikasi berbasis web dan mobile.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Riwayat Pendidikan -->
+<section id="pendidikan" class="container my-5">
+  <h2 class="text-primary mb-4">Riwayat Pendidikan</h2>
+  <ul>
+    <li><strong>Universitas Internasional Semen Indonesia</strong> - Sistem Informasi (2023 - Sekarang)</li>
+    <li><strong>SMK Semen Gresik</strong> - Rekayasa Perangkat Lunak (RKPL), Lulus (2023)</li>
+  </ul>
+</section>
+
+<!-- Video -->
+<section id="video" class="container my-5">
+  <h2 class="text-primary mb-4">Video Saya</h2>
+  <video controls width="100%">
+    <source src="video.mp4" type="video/mp4" />
+    Browser Anda tidak mendukung video.
+  </video>
+</section>
+
+<!-- Audio -->
+<section id="audio" class="container my-5">
+  <h2 class="text-primary mb-4">Audio Saya</h2>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg" />
+    Browser Anda tidak mendukung audio.
+  </audio>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="container my-5">
+  <h2 class="text-primary mb-4">Kontak</h2>
+  <form id="contact-form">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="contactName" placeholder="Nama Lengkap" required />
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" id="contactEmail" placeholder="Email" required />
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" id="contactMessage" placeholder="Pesan" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+  </form>
+
+  <!-- Daftar Kontak -->
+  <h3 class="mt-5 text-primary">Pesan Masuk</h3>
+  <div id="contactEntries" class="list-group"></div>
+</section>
+
+<!-- Galeri -->
+<section id="galeri" class="container my-5">
+  <h2 class="text-primary mb-4">Galeri</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="image1.jpg" alt="Gambar 1" class="img-fluid rounded mb-3">
+    </div>
+    <div class="col-md-4">
+      <img src="image2.jpg" alt="Gambar 2" class="img-fluid rounded mb-3">
+    </div>
+    <div class="col-md-4">
+      <img src="image3.jpg" alt="Gambar 3" class="img-fluid rounded mb-3">
+    </div>
+  </div>
+</section>
+
+<!-- Buku Tamu -->
+<section id="bukutamu" class="container my-5">
+  <h2 class="text-primary mb-4">Buku Tamu</h2>
+  <form id="guestbook-form" class="mb-4">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="guestName" placeholder="Nama Lengkap" required />
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" id="guestEmail" placeholder="Email" required />
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" id="guestMessage" placeholder="Pesan" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+  </form>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-4">
+      <p>Temui saya di:</p>
+      <a href="#" class="text-white me-3">📸 Instagram</a>
+      <a href="#" class="text-white me-3">📘 Facebook</a>
+      <a href="#" class="text-white me-3">🎞️ Snack Video</a>
+      <a href="#" class="text-white">🐦 Twitter</a>
+      <p class="mt-3">© 2025 Imanuel Fernando. Semua hak dilindungi.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
